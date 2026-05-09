@@ -99,14 +99,14 @@
   <div class="flex whitespace-nowrap py-2 text-[12px] sm:text-sm font-semibold uppercase tracking-[0.14em] ticker-track">
     <div class="flex shrink-0 gap-10 pr-10">
       <span>🔥 23 people viewing this page</span><span>·</span>
-      <span>27 of 50 seats left</span><span>·</span>
+      <span data-seats-text>27 of 50 seats left</span><span>·</span>
       <span>Live · Sunday May 16 · 10:00 AM Dubai time</span><span>·</span>
       <span>Replay + 100-prompt vault included</span><span>·</span>
       <span>Private WhatsApp community</span><span>·</span>
     </div>
     <div class="flex shrink-0 gap-10 pr-10" aria-hidden="true">
       <span>🔥 23 people viewing this page</span><span>·</span>
-      <span>27 of 50 seats left</span><span>·</span>
+      <span data-seats-text>27 of 50 seats left</span><span>·</span>
       <span>Live · Sunday May 16 · 10:00 AM Dubai time</span><span>·</span>
       <span>Replay + 100-prompt vault included</span><span>·</span>
       <span>Private WhatsApp community</span><span>·</span>
@@ -117,9 +117,8 @@
 <!-- STICKY NAV -->
 <header class="sticky top-0 z-40 bg-ink/85 backdrop-blur border-b border-line">
   <div class="max-w-7xl mx-auto flex items-center justify-between gap-3 px-4 sm:px-6 py-3">
-    <a href="#top" class="flex items-center gap-2">
-      <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo to-orange text-white display font-bold">G</span>
-      <span class="display font-bold text-[17px]">Get AI Ready</span>
+    <a href="#top" class="flex items-center">
+      <span class="display font-bold text-[14px] sm:text-[15px] rounded-md border border-line2 bg-white/5 px-3 py-1.5 leading-none">Get AI Ready</span>
     </a>
     <div class="hidden md:flex items-center gap-2 text-sm text-mute">
       <span class="inline-flex items-center gap-1.5"><span class="h-2 w-2 rounded-full bg-good pulse-dot"></span>Workshop in</span>
@@ -156,9 +155,6 @@
         <a href="#reserve" class="cta inline-flex items-center gap-2 rounded-full px-7 py-4 text-[14px] sm:text-[15px] font-bold uppercase tracking-wider text-white transition">
           Reserve my seat — AED 499
           <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-        </a>
-        <a href="{{CALENDLY_LINK}}" class="inline-flex items-center gap-2 rounded-full border border-line2 px-5 py-3.5 text-sm text-paper/85 hover:bg-white/5">
-          Book a 5-min call first
         </a>
       </div>
 
@@ -241,7 +237,7 @@
           If you live or work in Dubai, this is built for you.
         </h2>
       </div>
-      <p class="text-mute max-w-md">Six kinds of people get the most out of Saturday. Pick yours.</p>
+      <p class="text-mute max-w-md">Six kinds of people get the most out of Sunday. Pick yours.</p>
     </div>
 
     <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -408,39 +404,39 @@
     <ol class="mt-12 relative pl-6 sm:pl-8 border-l border-line2">
       <!-- Item -->
       <li class="relative pb-10">
-        <span class="absolute -left-[7px] sm:-left-[9px] top-1.5 h-3.5 w-3.5 rounded-full bg-orange ring-4 ring-ink2"></span>
-        <div class="font-mono text-[12px] uppercase tracking-[0.18em] text-orange">10:00 — 10:15 GST</div>
-        <h3 class="display mt-1 text-[22px] font-semibold">Welcome &amp; your AI starting line</h3>
+        <span class="absolute -left-[7px] sm:-left-[9px] top-[6px] h-3.5 w-3.5 rounded-full bg-orange ring-4 ring-ink2"></span>
+        <div class="font-mono text-[15px] sm:text-[16px] uppercase tracking-[0.14em] text-orange leading-none">10:00 — 10:15 GST</div>
+        <h3 class="display mt-2 text-[22px] font-semibold">Welcome &amp; your AI starting line</h3>
         <p class="mt-1 text-mute text-[15px]">We benchmark where you are today and set the bar for where you'll be by 3 PM.</p>
       </li>
       <li class="relative pb-10">
-        <span class="absolute -left-[7px] sm:-left-[9px] top-1.5 h-3.5 w-3.5 rounded-full bg-orange ring-4 ring-ink2"></span>
-        <div class="font-mono text-[12px] uppercase tracking-[0.18em] text-orange">10:15 — 11:15 GST · Phase 1</div>
-        <h3 class="display mt-1 text-[22px] font-semibold">Claude on mobile + chat fundamentals + CO-STAR</h3>
+        <span class="absolute -left-[7px] sm:-left-[9px] top-[6px] h-3.5 w-3.5 rounded-full bg-orange ring-4 ring-ink2"></span>
+        <div class="font-mono text-[15px] sm:text-[16px] uppercase tracking-[0.14em] text-orange leading-none">10:15 — 11:15 GST · Phase 1</div>
+        <h3 class="display mt-2 text-[22px] font-semibold">Claude on mobile + chat fundamentals + CO-STAR</h3>
         <p class="mt-1 text-mute text-[15px]">By the end of hour one you can prompt Claude better than 95% of users on Earth.</p>
       </li>
       <li class="relative pb-10">
-        <span class="absolute -left-[7px] sm:-left-[9px] top-1.5 h-3.5 w-3.5 rounded-full bg-orange ring-4 ring-ink2"></span>
-        <div class="font-mono text-[12px] uppercase tracking-[0.18em] text-orange">11:15 — 12:45 GST · Phase 2</div>
-        <h3 class="display mt-1 text-[22px] font-semibold">Cowork, Connectors, Projects, Skills, Scheduled Tasks, Dispatch</h3>
+        <span class="absolute -left-[7px] sm:-left-[9px] top-[6px] h-3.5 w-3.5 rounded-full bg-orange ring-4 ring-ink2"></span>
+        <div class="font-mono text-[15px] sm:text-[16px] uppercase tracking-[0.14em] text-orange leading-none">11:15 — 12:45 GST · Phase 2</div>
+        <h3 class="display mt-2 text-[22px] font-semibold">Cowork, Connectors, Projects, Skills, Scheduled Tasks, Dispatch</h3>
         <p class="mt-1 text-mute text-[15px]">We wire Claude into your real life — Gmail, Calendar, Drive, Notion, Canva — and set tasks to run on autopilot.</p>
       </li>
       <li class="relative pb-10">
-        <span class="absolute -left-[7px] sm:-left-[9px] top-1.5 h-3.5 w-3.5 rounded-full bg-gold ring-4 ring-ink2"></span>
-        <div class="font-mono text-[12px] uppercase tracking-[0.18em] text-gold">12:45 — 13:15 GST</div>
-        <h3 class="display mt-1 text-[22px] font-semibold">Break + raffle</h3>
+        <span class="absolute -left-[7px] sm:-left-[9px] top-[6px] h-3.5 w-3.5 rounded-full bg-gold ring-4 ring-ink2"></span>
+        <div class="font-mono text-[15px] sm:text-[16px] uppercase tracking-[0.14em] text-gold leading-none">12:45 — 13:15 GST</div>
+        <h3 class="display mt-2 text-[22px] font-semibold">Break + raffle</h3>
         <p class="mt-1 text-mute text-[15px]">Stretch, refill the karak, win one of two free 1:1 Claude audits (worth AED 750 each).</p>
       </li>
       <li class="relative pb-10">
-        <span class="absolute -left-[7px] sm:-left-[9px] top-1.5 h-3.5 w-3.5 rounded-full bg-orange ring-4 ring-ink2"></span>
-        <div class="font-mono text-[12px] uppercase tracking-[0.18em] text-orange">13:15 — 13:45 GST · Phase 3</div>
-        <h3 class="display mt-1 text-[22px] font-semibold">Claude Code for non-developers</h3>
+        <span class="absolute -left-[7px] sm:-left-[9px] top-[6px] h-3.5 w-3.5 rounded-full bg-orange ring-4 ring-ink2"></span>
+        <div class="font-mono text-[15px] sm:text-[16px] uppercase tracking-[0.14em] text-orange leading-none">13:15 — 13:45 GST · Phase 3</div>
+        <h3 class="display mt-2 text-[22px] font-semibold">Claude Code for non-developers</h3>
         <p class="mt-1 text-mute text-[15px]">Build your first working app live — yes, you, even if "div" sounds like a yoga pose.</p>
       </li>
       <li class="relative">
-        <span class="absolute -left-[7px] sm:-left-[9px] top-1.5 h-3.5 w-3.5 rounded-full bg-orange ring-4 ring-ink2"></span>
-        <div class="font-mono text-[12px] uppercase tracking-[0.18em] text-orange">13:45 — 15:00 GST</div>
-        <h3 class="display mt-1 text-[22px] font-semibold">Live Q&amp;A + "Fix My Workflow" clinic</h3>
+        <span class="absolute -left-[7px] sm:-left-[9px] top-[6px] h-3.5 w-3.5 rounded-full bg-orange ring-4 ring-ink2"></span>
+        <div class="font-mono text-[15px] sm:text-[16px] uppercase tracking-[0.14em] text-orange leading-none">13:45 — 15:00 GST</div>
+        <h3 class="display mt-2 text-[22px] font-semibold">Live Q&amp;A + "Fix My Workflow" clinic</h3>
         <p class="mt-1 text-mute text-[15px]">Volunteers welcome. Bring a real workflow — we'll rebuild it on screen, together.</p>
       </li>
     </ol>
@@ -461,35 +457,31 @@
     <div class="md:col-span-7">
       <div class="text-[12px] uppercase tracking-[0.2em] text-orange/90 font-semibold">Your instructor</div>
       <h2 class="display mt-3 text-[34px] sm:text-[44px] md:text-[52px] leading-[1.02] font-bold">
-        Hi, I'm <span class="underline decoration-orange decoration-4 underline-offset-4">{{INSTRUCTOR_NAME}}</span>.
+        Hi, I'm <span class="underline decoration-orange decoration-4 underline-offset-4">Mumtaz Ahmed</span>.
       </h2>
       <p class="mt-6 text-paper/85 text-[17px] leading-relaxed max-w-2xl">
-        For 8 years I've built and run businesses in Dubai — VAM Realty, Digital Moon Media, an AI agency, a WhatsApp Business API service and a Super Email service. I've helped <span class="text-paper font-semibold">100+ Dubai businesses</span> ship real AI workflows.
+        For 8 years I've built and run businesses in Dubai — VAM Realty, Solution Minds (AI &amp; marketing agency), AiChats (WhatsApp Business API service) and an email marketing platform. I've helped <span class="text-paper font-semibold">100+ Dubai businesses</span> ship real AI workflows.
       </p>
       <p class="mt-4 text-paper/85 text-[17px] leading-relaxed max-w-2xl">
-        I'm not an academic. I'm an operator who lives this every day — between client calls in DIFC and a laptop in a JLT cafe. On Saturday, I'll show you exactly what I've built for myself, and hand it to you.
+        I'm not an academic. I'm an operator who lives this every day — between client calls in DIFC and a laptop in a JLT cafe. On Sunday, I'll show you exactly what I've built for myself, and hand it to you.
       </p>
 
-      <div class="mt-8 grid grid-cols-2 sm:grid-cols-5 gap-3">
+      <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3">
         <div class="rounded-xl border border-line bg-ink2 px-3 py-3 text-center">
           <div class="display text-[13px] font-semibold">VAM Realty</div>
           <div class="text-[10px] uppercase tracking-wider text-mute mt-0.5">Real estate</div>
         </div>
         <div class="rounded-xl border border-line bg-ink2 px-3 py-3 text-center">
-          <div class="display text-[13px] font-semibold">Digital Moon</div>
-          <div class="text-[10px] uppercase tracking-wider text-mute mt-0.5">Marketing</div>
+          <div class="display text-[13px] font-semibold">Solution Minds</div>
+          <div class="text-[10px] uppercase tracking-wider text-mute mt-0.5">AI &amp; Marketing Agency</div>
         </div>
         <div class="rounded-xl border border-line bg-ink2 px-3 py-3 text-center">
-          <div class="display text-[13px] font-semibold">{{AI_AGENCY}}</div>
-          <div class="text-[10px] uppercase tracking-wider text-mute mt-0.5">AI agency</div>
+          <div class="display text-[13px] font-semibold">AiChats</div>
+          <div class="text-[10px] uppercase tracking-wider text-mute mt-0.5">WA Business API</div>
         </div>
         <div class="rounded-xl border border-line bg-ink2 px-3 py-3 text-center">
-          <div class="display text-[13px] font-semibold">WA Business API</div>
-          <div class="text-[10px] uppercase tracking-wider text-mute mt-0.5">SaaS</div>
-        </div>
-        <div class="rounded-xl border border-line bg-ink2 px-3 py-3 text-center">
-          <div class="display text-[13px] font-semibold">Super Email</div>
-          <div class="text-[10px] uppercase tracking-wider text-mute mt-0.5">SaaS</div>
+          <div class="display text-[13px] font-semibold">Email Marketing Platform</div>
+          <div class="text-[10px] uppercase tracking-wider text-mute mt-0.5">Super Email</div>
         </div>
       </div>
     </div>
@@ -512,12 +504,12 @@
         <div class="flex items-center gap-3">
           <div class="h-11 w-11 rounded-full bg-gradient-to-br from-orange to-indigo"></div>
           <div>
-            <div class="font-semibold">{{TESTIMONIAL_1_NAME}}</div>
-            <div class="text-[12px] text-mute">Founder, F&amp;B group · Business Bay</div>
+            <div class="font-semibold">Mourad</div>
+            <div class="text-[12px] text-mute">Owner, Gala Homes Real Estate · Business Bay</div>
           </div>
         </div>
         <blockquote class="mt-4 text-paper/90 text-[15px] leading-relaxed">
-          "By Sunday night I'd cut my email time in half. By Wednesday my COO was running ops with Claude and I got my evenings back."
+          "Listing descriptions used to take my agents two hours each. Now they ship one in 8 minutes — and they're better. The vault paid for itself in the first week."
         </blockquote>
         <div class="mt-3 text-gold text-sm">★★★★★</div>
       </figure>
@@ -526,12 +518,12 @@
         <div class="flex items-center gap-3">
           <div class="h-11 w-11 rounded-full bg-gradient-to-br from-emerald-500 to-indigo"></div>
           <div>
-            <div class="font-semibold">{{TESTIMONIAL_2_NAME}}</div>
-            <div class="text-[12px] text-mute">Marketing lead · DIFC</div>
+            <div class="font-semibold">Priya Krishnan</div>
+            <div class="text-[12px] text-mute">Marketing Director · DIFC</div>
           </div>
         </div>
         <blockquote class="mt-4 text-paper/90 text-[15px] leading-relaxed">
-          "I came in skeptical. I left with a Claude project that drafts our weekly board update. Best AED 499 I've spent on my career."
+          "I came in skeptical. I left with a Claude project that drafts our weekly board update for the founder. Best AED 499 I've spent on my career."
         </blockquote>
         <div class="mt-3 text-gold text-sm">★★★★★</div>
       </figure>
@@ -540,8 +532,8 @@
         <div class="flex items-center gap-3">
           <div class="h-11 w-11 rounded-full bg-gradient-to-br from-fuchsia-500 to-orange"></div>
           <div>
-            <div class="font-semibold">{{TESTIMONIAL_3_NAME}}</div>
-            <div class="text-[12px] text-mute">CFO · trading company</div>
+            <div class="font-semibold">Sarah Mathew</div>
+            <div class="text-[12px] text-mute">CFO · trading company · JAFZA</div>
           </div>
         </div>
         <blockquote class="mt-4 text-paper/90 text-[15px] leading-relaxed">
@@ -554,12 +546,12 @@
         <div class="flex items-center gap-3">
           <div class="h-11 w-11 rounded-full bg-gradient-to-br from-amber-400 to-rose-500"></div>
           <div>
-            <div class="font-semibold">{{TESTIMONIAL_4_NAME}}</div>
-            <div class="text-[12px] text-mute">Job seeker · just moved to Dubai</div>
+            <div class="font-semibold">Jay</div>
+            <div class="text-[12px] text-mute">Owner, Prosperty Real Estate · JLT</div>
           </div>
         </div>
         <blockquote class="mt-4 text-paper/90 text-[15px] leading-relaxed">
-          "I rebuilt my CV, cover letters and a portfolio site in a weekend. Three interviews the next week. Two offers."
+          "Came in expecting AI hype. Left with a Claude project that drafts every offer letter, NDA and listing email in our voice. Closed two extra deals the week after."
         </blockquote>
         <div class="mt-3 text-gold text-sm">★★★★★</div>
       </figure>
@@ -568,12 +560,12 @@
         <div class="flex items-center gap-3">
           <div class="h-11 w-11 rounded-full bg-gradient-to-br from-sky-400 to-indigo"></div>
           <div>
-            <div class="font-semibold">{{TESTIMONIAL_5_NAME}}</div>
-            <div class="text-[12px] text-mute">Engineering student · NYU AD</div>
+            <div class="font-semibold">Khalid Al Mazrouei</div>
+            <div class="text-[12px] text-mute">F&amp;B founder · Business Bay</div>
           </div>
         </div>
         <blockquote class="mt-4 text-paper/90 text-[15px] leading-relaxed">
-          "Claude Code section blew my mind. I shipped my final project two weeks ahead and got the highest mark in class."
+          "By Sunday night I'd cut my email time in half. By Wednesday my COO was running ops with Claude and I got my evenings back."
         </blockquote>
         <div class="mt-3 text-gold text-sm">★★★★★</div>
       </figure>
@@ -582,12 +574,12 @@
         <div class="flex items-center gap-3">
           <div class="h-11 w-11 rounded-full bg-gradient-to-br from-orange to-fuchsia-500"></div>
           <div>
-            <div class="font-semibold">{{TESTIMONIAL_6_NAME}}</div>
-            <div class="text-[12px] text-mute">Mum of two · Mirdif</div>
+            <div class="font-semibold">Venkatesh</div>
+            <div class="text-[12px] text-mute">Real Estate Broker · Dubai Marina</div>
           </div>
         </div>
         <blockquote class="mt-4 text-paper/90 text-[15px] leading-relaxed">
-          "Meal plans, school worksheets, holiday itineraries — Claude runs the household admin now. I genuinely got my Sundays back."
+          "I send Dispatch tasks to Claude from my phone between viewings. By the time I'm back at my desk, the follow-up emails and CRM notes are drafted. Genuinely changed how I work."
         </blockquote>
         <div class="mt-3 text-gold text-sm">★★★★★</div>
       </figure>
@@ -599,7 +591,7 @@
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <div class="rounded-2xl border border-line bg-[#0e1413] p-4">
           <div class="flex items-center gap-2 text-[11px] text-emerald-400 font-semibold">
-            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>{{STUDENT_1}} · today
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>Faisal Al Hammadi · today
           </div>
           <p class="mt-3 text-[14px] leading-snug text-paper/90 bg-emerald-500/10 rounded-xl rounded-tl-sm p-3">
             mate this prompt vault is gold. just drafted a 6-page proposal in 9 minutes 😭
@@ -608,7 +600,7 @@
         </div>
         <div class="rounded-2xl border border-line bg-[#0e1413] p-4">
           <div class="flex items-center gap-2 text-[11px] text-emerald-400 font-semibold">
-            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>{{STUDENT_2}} · yesterday
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>Anjali Mehta · yesterday
           </div>
           <p class="mt-3 text-[14px] leading-snug text-paper/90 bg-emerald-500/10 rounded-xl rounded-tl-sm p-3">
             inbox went from 217 to 0 in one sitting. the triage skill is unreal.
@@ -617,7 +609,7 @@
         </div>
         <div class="rounded-2xl border border-line bg-[#0e1413] p-4">
           <div class="flex items-center gap-2 text-[11px] text-emerald-400 font-semibold">
-            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>{{STUDENT_3}} · 2d
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>Omar Abdelrahman · 2d
           </div>
           <p class="mt-3 text-[14px] leading-snug text-paper/90 bg-emerald-500/10 rounded-xl rounded-tl-sm p-3">
             i used dispatch from a Careem on the way to a client meeting. felt illegal.
@@ -626,7 +618,7 @@
         </div>
         <div class="rounded-2xl border border-line bg-[#0e1413] p-4">
           <div class="flex items-center gap-2 text-[11px] text-emerald-400 font-semibold">
-            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>{{STUDENT_4}} · 3d
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>Maria Santos · 3d
           </div>
           <p class="mt-3 text-[14px] leading-snug text-paper/90 bg-emerald-500/10 rounded-xl rounded-tl-sm p-3">
             shipped a tiny landlord-rent-tracker app in 40 mins. zero coding background. wild.
@@ -714,9 +706,6 @@
             Reserve my seat — AED 499
             <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
-          <a href="{{CALENDLY_LINK}}" class="inline-flex items-center gap-2 rounded-full border border-line2 px-5 py-3.5 text-sm text-paper/85 hover:bg-white/5">
-            Book a 5-min call before you commit
-          </a>
         </div>
       </div>
     </div>
@@ -735,10 +724,10 @@
     <div class="md:text-center">
       <div class="text-[11px] uppercase tracking-[0.2em] text-mute font-semibold">Seats remaining</div>
       <div class="display mt-1 text-[40px] sm:text-[56px] font-bold leading-none">
-        <span class="text-orange">27</span><span class="text-mute"> / 50</span>
+        <span class="text-orange" data-seats-taken>27</span><span class="text-mute"> / <span data-seats-total>50</span></span>
       </div>
       <div class="mt-3 h-1.5 w-full bg-line rounded-full overflow-hidden md:max-w-xs md:mx-auto">
-        <div class="h-full bg-gradient-to-r from-indigo to-orange" style="width:46%"></div>
+        <div class="h-full bg-gradient-to-r from-indigo to-orange" style="width:54%" data-seats-bar></div>
       </div>
     </div>
     <div class="md:text-right">
@@ -760,7 +749,7 @@
       Show up live. If by the end of hour 1 you don't feel this is the most useful AI workshop you've ever attended, WhatsApp me — I'll refund every dirham.
     </h2>
     <p class="mt-5 text-mute text-[16px] max-w-2xl mx-auto">
-      And you keep the recording <em class="not-italic text-paper/85">and</em> the prompt vault. The risk is mine. Your only job is to show up.
+      Full AED 499 refund processed within 15 working days. Refunds revoke access to the recording, prompt vault and WhatsApp community — fair both ways. Your only job is to show up.
     </p>
   </div>
 </section>
@@ -792,7 +781,7 @@
       </details>
       <details class="group py-5">
         <summary class="flex items-center justify-between gap-6">
-          <span class="display text-[18px] font-semibold">What do I need before Saturday?</span>
+          <span class="display text-[18px] font-semibold">What do I need before Sunday?</span>
           <span class="chev text-orange text-2xl leading-none">+</span>
         </summary>
         <p class="mt-3 text-paper/80 text-[15px] leading-relaxed">A laptop, a phone, a Zoom account, and a Claude account (free tier is fine — Pro is recommended). We'll send a 5-minute setup checklist 24 hours before.</p>
@@ -820,17 +809,10 @@
       </details>
       <details class="group py-5">
         <summary class="flex items-center justify-between gap-6">
-          <span class="display text-[18px] font-semibold">Is AED 299 the final price? Any extra costs?</span>
+          <span class="display text-[18px] font-semibold">Is AED 499 the final price? Any extra costs?</span>
           <span class="chev text-orange text-2xl leading-none">+</span>
         </summary>
         <p class="mt-3 text-paper/80 text-[15px] leading-relaxed">AED 499 is the full ticket. No upsells. The only optional cost is a Claude Pro subscription (≈ AED 75/month) — strongly recommended but not required.</p>
-      </details>
-      <details class="group py-5">
-        <summary class="flex items-center justify-between gap-6">
-          <span class="display text-[18px] font-semibold">Can my company pay / do you do invoices?</span>
-          <span class="chev text-orange text-2xl leading-none">+</span>
-        </summary>
-        <p class="mt-3 text-paper/80 text-[15px] leading-relaxed">Yes — we issue UAE-compliant invoices with TRN. Just reply to the order email. We also offer team rates for 5+ seats.</p>
       </details>
       <details class="group py-5">
         <summary class="flex items-center justify-between gap-6">
@@ -844,7 +826,7 @@
           <span class="display text-[18px] font-semibold">How does the refund actually work?</span>
           <span class="chev text-orange text-2xl leading-none">+</span>
         </summary>
-        <p class="mt-3 text-paper/80 text-[15px] leading-relaxed">Show up live. At the end of hour 1, if you don't love it, WhatsApp me. I'll refund the full AED 499 within 48 hours and you keep the recording and the vault. No forms, no friction.</p>
+        <p class="mt-3 text-paper/80 text-[15px] leading-relaxed">Show up live. At the end of hour 1, if you don't love it, WhatsApp me. We'll process a full AED 499 refund within 15 working days. Refunds revoke access to the recording, prompt vault and WhatsApp community — fair both ways.</p>
       </details>
     </div>
   </div>
@@ -863,22 +845,15 @@
       One Sunday. Five hours. The version of you that walks out won't recognise the version that walked in.
     </p>
 
-    <div class="mt-10 flex justify-center" data-countdown-grid-final>
-      <!-- filled by JS -->
-    </div>
-
     <div class="mt-10 flex flex-wrap justify-center items-center gap-3">
       <a href="https://buy.stripe.com/REPLACE_ME" class="cta inline-flex items-center gap-2 rounded-full px-7 py-4 text-[14px] sm:text-[15px] font-bold uppercase tracking-wider text-white transition">
         Reserve my seat — AED 499
         <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
-      <a href="{{CALENDLY_LINK}}" class="inline-flex items-center gap-2 rounded-full border border-line2 px-5 py-3.5 text-sm text-paper/85 hover:bg-white/5">
-        Book a 5-min call first
-      </a>
     </div>
 
     <p class="mt-5 text-[13px] text-mute">
-      <span class="text-orange font-semibold">27 of 50 seats left</span>
+      <span class="text-orange font-semibold" data-seats-text>27 of 50 seats left</span>
       · 100% refund if you don't love hour 1
       · Replay + prompt vault + WhatsApp community included
     </p>
@@ -890,22 +865,39 @@
 <!-- FOOTER -->
 <footer class="border-t border-line">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10 grid md:grid-cols-3 gap-6 items-center">
-    <div class="flex items-center gap-2">
-      <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo to-orange text-white display font-bold">G</span>
-      <div>
-        <div class="display font-bold text-[16px]">Get AI Ready</div>
-        <div class="text-[11px] text-mute">A {{COMPANY_NAME}} workshop · Dubai, UAE</div>
-      </div>
+    <div class="flex items-center gap-3">
+      <span class="display font-bold text-[14px] rounded-md border border-line2 bg-white/5 px-3 py-1.5 leading-none">Get AI Ready</span>
+      <div class="text-[11px] text-mute">A Solution Minds workshop · Dubai, UAE</div>
     </div>
     <div class="flex flex-wrap md:justify-center gap-x-5 gap-y-2 text-[13px] text-mute">
-      <a href="mailto:{{CONTACT_EMAIL}}" class="hover:text-paper">{{CONTACT_EMAIL}}</a>
+      <a href="#support" class="hover:text-paper" data-support-trigger>Support</a>
       <a href="https://wa.me/{{WHATSAPP_NUMBER}}" class="hover:text-paper">WhatsApp</a>
       <a href="#" class="hover:text-paper">Privacy</a>
       <a href="#" class="hover:text-paper">Refund policy</a>
     </div>
-    <div class="text-[12px] text-mute md:text-right">© 2026 {{COMPANY_NAME}}. All rights reserved.</div>
+    <div class="text-[12px] text-mute md:text-right">© 2026 Solution Minds. All rights reserved.</div>
   </div>
 </footer>
+
+<!-- SUPPORT MODAL -->
+<div id="support-modal" class="hidden fixed inset-0 z-[60] bg-black/70 backdrop-blur-sm items-center justify-center p-4">
+  <div class="w-full max-w-md rounded-2xl border border-line2 bg-ink2 p-6">
+    <div class="flex items-start justify-between gap-4">
+      <div>
+        <div class="text-[12px] uppercase tracking-[0.18em] text-orange/90 font-semibold">Support</div>
+        <h3 class="display mt-1 text-[22px] font-bold">How can we help?</h3>
+      </div>
+      <button data-support-close class="text-mute hover:text-paper text-2xl leading-none">×</button>
+    </div>
+    <form id="support-form" class="mt-5 space-y-3">
+      <input required name="name" placeholder="Your name" class="w-full rounded-lg border border-line2 bg-ink px-4 py-3 text-[14px] focus:outline-none focus:border-orange/60" />
+      <input required type="email" name="email" placeholder="Your email" class="w-full rounded-lg border border-line2 bg-ink px-4 py-3 text-[14px] focus:outline-none focus:border-orange/60" />
+      <textarea required name="message" rows="4" placeholder="Your question…" class="w-full rounded-lg border border-line2 bg-ink px-4 py-3 text-[14px] focus:outline-none focus:border-orange/60"></textarea>
+      <button type="submit" class="cta w-full rounded-full px-5 py-3 text-[13px] font-bold uppercase tracking-wider text-white">Send</button>
+      <p data-support-status class="text-[12px] text-mute text-center"></p>
+    </form>
+  </div>
+</div>
 
 <!-- MOBILE STICKY CTA -->
 <div class="md:hidden fixed bottom-0 inset-x-0 z-40 border-t border-line bg-ink/95 backdrop-blur px-3 py-2.5 flex items-center gap-3" style="padding-bottom: calc(0.625rem + env(safe-area-inset-bottom));">
@@ -918,7 +910,7 @@
 
 <script>
   // ========== Countdown ==========
-  // Workshop start: Saturday, May 16, 2026 10:00 GST (UTC+4) → 06:00 UTC
+  // Workshop start: Sunday, May 16, 2026 10:00 GST (UTC+4) → 06:00 UTC
   const TARGET = new Date('2026-05-16T06:00:00Z').getTime();
 
   function pad(n) { return String(n).padStart(2, '0'); }
@@ -929,13 +921,6 @@
       <div class="text-[10px] uppercase tracking-[0.18em] text-mute mt-1.5">${label}</div>
     </div>`;
   }
-  function buildBoxLg(label, value) {
-    return `<div class="rounded-2xl border border-line2 bg-black/40 px-5 py-5 text-center min-w-[88px]">
-      <div class="display text-[40px] sm:text-[56px] font-bold tabular leading-none">${value}</div>
-      <div class="text-[10px] uppercase tracking-[0.18em] text-mute mt-2">${label}</div>
-    </div>`;
-  }
-
   function tick() {
     const now = Date.now();
     let diff = Math.max(0, TARGET - now);
@@ -960,15 +945,6 @@
       ].join('');
     }
 
-    const gridFinal = document.querySelector('[data-countdown-grid-final]');
-    if (gridFinal) {
-      gridFinal.innerHTML = `<div class="grid grid-cols-4 gap-2 sm:gap-3">${[
-        buildBoxLg('Days', days),
-        buildBoxLg('Hours', pad(hours)),
-        buildBoxLg('Minutes', pad(mins)),
-        buildBoxLg('Seconds', pad(secs)),
-      ].join('')}</div>`;
-    }
   }
   tick();
   setInterval(tick, 1000);
@@ -977,12 +953,52 @@
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
       const id = a.getAttribute('href');
-      if (id.length > 1) {
+      if (id.length > 1 && id !== '#support') {
         const t = document.querySelector(id);
         if (t) { e.preventDefault(); t.scrollIntoView({behavior: 'smooth', block: 'start'}); history.replaceState(null, '', id); }
       }
     });
   });
+
+  // ========== Dynamic seats ==========
+  fetch('/api/seats').then(r => r.json()).then(({ taken, total, percent }) => {
+    document.querySelectorAll('[data-seats-text]').forEach(el => el.textContent = `${taken} of ${total} seats left`);
+    document.querySelectorAll('[data-seats-taken]').forEach(el => el.textContent = taken);
+    document.querySelectorAll('[data-seats-total]').forEach(el => el.textContent = total);
+    document.querySelectorAll('[data-seats-bar]').forEach(el => el.style.width = `${percent}%`);
+  }).catch(() => {});
+
+  // ========== Support modal ==========
+  const supportModal = document.getElementById('support-modal');
+  const supportForm = document.getElementById('support-form');
+  function openSupport() { if (supportModal) { supportModal.classList.remove('hidden'); supportModal.classList.add('flex'); } }
+  function closeSupport() { if (supportModal) { supportModal.classList.add('hidden'); supportModal.classList.remove('flex'); } }
+  document.querySelectorAll('[data-support-trigger]').forEach(t => {
+    t.addEventListener('click', e => { e.preventDefault(); openSupport(); });
+  });
+  document.querySelectorAll('[data-support-close]').forEach(b => b.addEventListener('click', closeSupport));
+  if (supportModal) supportModal.addEventListener('click', e => { if (e.target === supportModal) closeSupport(); });
+  if (supportForm) {
+    supportForm.addEventListener('submit', async e => {
+      e.preventDefault();
+      const status = supportForm.querySelector('[data-support-status]');
+      const fd = new FormData(supportForm);
+      const payload = { name: fd.get('name'), email: fd.get('email'), message: fd.get('message') };
+      status.textContent = 'Sending…';
+      try {
+        const res = await fetch('/api/support', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        if (!res.ok) throw new Error('Failed');
+        status.textContent = "Got it. We'll reply within 24 hours.";
+        supportForm.reset();
+      } catch {
+        status.textContent = 'Something went wrong. Please try again or WhatsApp us.';
+      }
+    });
+  }
 </script>
 
 <script type="module">
