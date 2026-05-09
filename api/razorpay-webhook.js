@@ -91,6 +91,20 @@ const handler = async (req, res) => {
     return res.status(500).json({ error: error.message });
   }
 
+  // Send magic link email so the user can claim their seat without typing
+  // anything. Best-effort — we don't fail the webhook if this errors out,
+  // since the registration is already recorded.
+  const siteUrl = process.env.SITE_URL || 'https://dubaiaicourse.vercel.app';
+  try {
+    const { error: otpError } = await supabase.auth.signInWithOtp({
+      email,
+      options: { emailRedirectTo: `${siteUrl}/?welcome=1` },
+    });
+    if (otpError) console.error('Magic link send error:', otpError);
+  } catch (err) {
+    console.error('Magic link send failed:', err);
+  }
+
   res.status(200).json({ ok: true });
 };
 
