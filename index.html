@@ -1,0 +1,987 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Get AI Ready — Master Claude AI in one live Sunday in Dubai</title>
+<meta name="description" content="Live 5-hour Zoom workshop in Dubai. Master Claude AI for everyday life. Sunday, May 16, 2026. AED 499." />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#0B0B0F',
+          ink2: '#101016',
+          line: '#1F1F24',
+          line2: '#2A2A33',
+          paper: '#FAFAFA',
+          mute: '#9A9AA6',
+          orange: '#FF6B00',
+          indigo: '#6D28D9',
+          gold: '#D4AF37',
+          good: '#22C55E',
+        },
+        fontFamily: {
+          sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+          display: ['"Space Grotesk"', 'ui-sans-serif', 'system-ui'],
+        },
+        boxShadow: {
+          glow: '0 0 0 1px rgba(255,107,0,.4), 0 20px 60px -10px rgba(255,107,0,.35)',
+          card: '0 20px 60px -20px rgba(0,0,0,.6)',
+        },
+      },
+    },
+  };
+</script>
+
+<style>
+  html, body { background: #0B0B0F; color: #FAFAFA; }
+  body { font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  .display { font-family: 'Space Grotesk', system-ui, sans-serif; letter-spacing: -0.02em; }
+  .h1 { font-family: 'Space Grotesk', system-ui, sans-serif; letter-spacing: -0.04em; font-weight: 700; }
+
+  /* Hero glow */
+  .hero-grad {
+    background:
+      radial-gradient(60% 50% at 15% 0%, rgba(109,40,217,.35), transparent 60%),
+      radial-gradient(50% 60% at 100% 30%, rgba(255,107,0,.30), transparent 60%),
+      linear-gradient(180deg, #0B0B0F 0%, #0B0B0F 100%);
+  }
+  .ring-orange { box-shadow: 0 0 0 1px rgba(255,107,0,.5), 0 0 0 6px rgba(255,107,0,.12); }
+
+  /* Marquee */
+  @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .ticker-track { animation: ticker 40s linear infinite; }
+
+  /* Pulse dot */
+  @keyframes pulseDot { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: .4; transform: scale(.8); } }
+  .pulse-dot { animation: pulseDot 1.6s ease-in-out infinite; }
+
+  /* Striped placeholder */
+  .stripes {
+    background-image: repeating-linear-gradient(135deg, rgba(255,255,255,.04) 0 8px, transparent 8px 16px);
+  }
+
+  /* CTA pill */
+  .cta {
+    background: linear-gradient(180deg, #FF7A1A 0%, #FF6B00 100%);
+    box-shadow: 0 1px 0 rgba(255,255,255,.25) inset, 0 12px 30px -8px rgba(255,107,0,.55);
+  }
+  .cta:hover { transform: translateY(-1px) scale(1.02); }
+  .cta:active { transform: translateY(0) scale(1); }
+
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+  details[open] .chev { transform: rotate(45deg); }
+  .chev { transition: transform .2s ease; }
+
+  /* prevent layout shift on countdown digits */
+  .tabular { font-variant-numeric: tabular-nums; }
+
+  /* footer/safe area for mobile sticky CTA */
+  @media (max-width: 767px) {
+    body { padding-bottom: 84px; }
+  }
+
+  ::selection { background: #FF6B00; color: #0B0B0F; }
+</style>
+</head>
+<body class="font-sans">
+
+<!-- LIVE TICKER -->
+<div class="bg-orange text-ink overflow-hidden border-b border-orange/30">
+  <div class="flex whitespace-nowrap py-2 text-[12px] sm:text-sm font-semibold uppercase tracking-[0.14em] ticker-track">
+    <div class="flex shrink-0 gap-10 pr-10">
+      <span>🔥 23 people viewing this page</span><span>·</span>
+      <span>27 of 50 seats left</span><span>·</span>
+      <span>Live · Sunday May 16 · 10:00 AM Dubai time</span><span>·</span>
+      <span>Replay + 100-prompt vault included</span><span>·</span>
+      <span>Private WhatsApp community</span><span>·</span>
+    </div>
+    <div class="flex shrink-0 gap-10 pr-10" aria-hidden="true">
+      <span>🔥 23 people viewing this page</span><span>·</span>
+      <span>27 of 50 seats left</span><span>·</span>
+      <span>Live · Sunday May 16 · 10:00 AM Dubai time</span><span>·</span>
+      <span>Replay + 100-prompt vault included</span><span>·</span>
+      <span>Private WhatsApp community</span><span>·</span>
+    </div>
+  </div>
+</div>
+
+<!-- STICKY NAV -->
+<header class="sticky top-0 z-40 bg-ink/85 backdrop-blur border-b border-line">
+  <div class="max-w-7xl mx-auto flex items-center justify-between gap-3 px-4 sm:px-6 py-3">
+    <a href="#top" class="flex items-center gap-2">
+      <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo to-orange text-white display font-bold">G</span>
+      <span class="display font-bold text-[17px]">Get AI Ready</span>
+    </a>
+    <div class="hidden md:flex items-center gap-2 text-sm text-mute">
+      <span class="inline-flex items-center gap-1.5"><span class="h-2 w-2 rounded-full bg-good pulse-dot"></span>Workshop in</span>
+      <span data-countdown class="tabular text-paper font-semibold"></span>
+    </div>
+    <a href="#reserve" class="cta hidden sm:inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-[13px] font-bold uppercase tracking-wider text-white transition">
+      Reserve my seat — AED 499
+    </a>
+    <a href="#reserve" class="sm:hidden cta inline-flex items-center rounded-full px-4 py-2 text-[12px] font-bold uppercase tracking-wider text-white">Reserve · 499</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero-grad border-b border-line">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-12 pb-16 md:pt-20 md:pb-24 grid md:grid-cols-12 gap-10 items-center">
+    <div class="md:col-span-7">
+      <div class="inline-flex items-center gap-2 rounded-full border border-line2 bg-white/5 px-3 py-1.5 text-[12px] sm:text-sm">
+        <span>🇦🇪</span>
+        <span class="text-paper/90">Live in Dubai · Sunday, May 16, 2026 · Only 50 seats</span>
+      </div>
+
+      <h1 class="h1 mt-6 text-[56px] leading-[0.92] sm:text-[72px] md:text-[80px]">
+        Get<br>AI&nbsp;Ready<span class="text-orange">.</span>
+      </h1>
+
+      <p class="mt-6 max-w-2xl text-[20px] sm:text-[24px] md:text-[26px] leading-snug text-paper/80">
+        Save <span class="text-paper font-semibold">10+ hours a week</span> with Claude AI — in one live 5-hour Zoom on Sunday, May 16. Built for Dubai professionals, founders, students and job seekers.
+      </p>
+
+      <div class="mt-8 flex flex-wrap items-center gap-3">
+        <a href="#reserve" class="cta inline-flex items-center gap-2 rounded-full px-7 py-4 text-[14px] sm:text-[15px] font-bold uppercase tracking-wider text-white transition">
+          Reserve my seat — AED 499
+          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="{{CALENDLY_LINK}}" class="inline-flex items-center gap-2 rounded-full border border-line2 px-5 py-3.5 text-sm text-paper/85 hover:bg-white/5">
+          Book a 5-min call first
+        </a>
+      </div>
+
+      <p class="mt-4 text-[13px] text-mute">
+        <span class="text-paper/85">100% refund</span> if you don't love the first hour
+        · <span class="text-paper/85">50 seats</span> only
+        · <span class="text-paper/85">Replay included</span>
+      </p>
+
+      <!-- Inline trust -->
+      <div class="mt-6 flex items-center gap-3 text-[12px] text-mute">
+        <div class="flex -space-x-2">
+          <span class="h-7 w-7 rounded-full bg-gradient-to-br from-orange to-indigo border border-ink"></span>
+          <span class="h-7 w-7 rounded-full bg-gradient-to-br from-indigo to-emerald-500 border border-ink"></span>
+          <span class="h-7 w-7 rounded-full bg-gradient-to-br from-amber-400 to-orange border border-ink"></span>
+          <span class="h-7 w-7 rounded-full bg-gradient-to-br from-fuchsia-500 to-indigo border border-ink"></span>
+        </div>
+        <span><span class="text-gold">★★★★★</span> 4.9/5 from 220+ Dubai professionals</span>
+      </div>
+    </div>
+
+    <!-- VSL placeholder -->
+    <div class="md:col-span-5">
+      <div class="relative aspect-video w-full overflow-hidden rounded-2xl border border-line2 stripes">
+        <div class="absolute inset-0 bg-gradient-to-br from-indigo/30 via-transparent to-orange/30"></div>
+        <button aria-label="Play founder video" class="absolute inset-0 flex flex-col items-center justify-center gap-3 group">
+          <span class="ring-orange flex h-16 w-16 items-center justify-center rounded-full bg-orange text-white transition group-hover:scale-105">
+            <svg viewBox="0 0 24 24" class="h-7 w-7 ml-0.5" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </span>
+          <span class="font-mono text-[11px] uppercase tracking-[0.2em] text-paper/70">{{FOUNDER_VSL_2_MIN}}</span>
+        </button>
+        <div class="absolute bottom-3 left-3 inline-flex items-center gap-2 rounded-full bg-black/60 px-3 py-1 text-[11px] backdrop-blur">
+          <span class="h-1.5 w-1.5 rounded-full bg-orange pulse-dot"></span>
+          Watch a 2-min message from your instructor
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COUNTDOWN STRIP -->
+  <div class="border-t border-line bg-ink2/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-5 grid grid-cols-2 md:grid-cols-5 gap-4 items-center">
+      <div class="md:col-span-2 text-[12px] uppercase tracking-[0.18em] text-mute">Doors close in</div>
+      <div class="col-span-2 md:col-span-3 grid grid-cols-4 gap-2 sm:gap-3" data-countdown-grid>
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- PAS BLOCK -->
+<section class="border-b border-line">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-20 md:py-28">
+    <div class="text-[12px] uppercase tracking-[0.2em] text-orange/90 font-semibold">The Dubai AI gap</div>
+    <h2 class="display mt-3 text-[34px] sm:text-[44px] md:text-[56px] leading-[1.02] font-bold max-w-3xl">
+      Everyone in Dubai is talking about AI. Almost no one is using it properly.
+    </h2>
+    <div class="mt-8 grid md:grid-cols-3 gap-6 text-paper/80 text-[16px] leading-relaxed">
+      <p>
+        You opened ChatGPT, asked it to "write an email," got back something a 14-year-old could spot. So you're back to copy-pasting between five tabs while your team waits.
+      </p>
+      <p>
+        Meanwhile your inbox grows, your Sheikh Zayed Road commute keeps eating two hours, and your competitors are quietly shipping. That's <span class="text-paper">8–12 hours a week</span> you're losing to work AI should be doing for you.
+      </p>
+      <p>
+        One Sunday changes that. By 3 PM you'll have Claude wired into your email, calendar, Drive and phone — running tasks while you sit in traffic or grab karak in JLT.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- WHO THIS IS FOR -->
+<section class="border-b border-line">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-28">
+    <div class="flex items-end justify-between flex-wrap gap-4">
+      <div>
+        <div class="text-[12px] uppercase tracking-[0.2em] text-orange/90 font-semibold">Who this is for</div>
+        <h2 class="display mt-3 text-[34px] sm:text-[44px] leading-[1.05] font-bold max-w-3xl">
+          If you live or work in Dubai, this is built for you.
+        </h2>
+      </div>
+      <p class="text-mute max-w-md">Six kinds of people get the most out of Saturday. Pick yours.</p>
+    </div>
+
+    <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- card template repeated -->
+      <div class="group rounded-2xl border border-line bg-ink2 p-6 hover:border-line2 hover:shadow-card transition">
+        <div class="h-10 w-10 rounded-xl bg-orange/10 text-orange flex items-center justify-center">
+          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-7h6v7"/></svg>
+        </div>
+        <h3 class="display mt-4 text-[20px] font-semibold">Business owners &amp; founders</h3>
+        <p class="mt-2 text-mute text-[15px] leading-relaxed">You want your team to 10x output without 10x headcount.</p>
+      </div>
+
+      <div class="group rounded-2xl border border-line bg-ink2 p-6 hover:border-line2 hover:shadow-card transition">
+        <div class="h-10 w-10 rounded-xl bg-indigo/15 text-indigo-300 flex items-center justify-center">
+          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-7 4 14 2-7h6"/></svg>
+        </div>
+        <h3 class="display mt-4 text-[20px] font-semibold">CEOs, CFOs, CXOs</h3>
+        <p class="mt-2 text-mute text-[15px] leading-relaxed">You're tired of being the bottleneck on every decision and every doc.</p>
+      </div>
+
+      <div class="group rounded-2xl border border-line bg-ink2 p-6 hover:border-line2 hover:shadow-card transition">
+        <div class="h-10 w-10 rounded-xl bg-gold/15 text-gold flex items-center justify-center">
+          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>
+        </div>
+        <h3 class="display mt-4 text-[20px] font-semibold">Mid-career professionals</h3>
+        <p class="mt-2 text-mute text-[15px] leading-relaxed">You want to be the person in your team nobody can replace.</p>
+      </div>
+
+      <div class="group rounded-2xl border border-line bg-ink2 p-6 hover:border-line2 hover:shadow-card transition">
+        <div class="h-10 w-10 rounded-xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center">
+          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
+        </div>
+        <h3 class="display mt-4 text-[20px] font-semibold">Job seekers in Dubai</h3>
+        <p class="mt-2 text-mute text-[15px] leading-relaxed">You need a CV, portfolio and interview prep that stand out in 2026.</p>
+      </div>
+
+      <div class="group rounded-2xl border border-line bg-ink2 p-6 hover:border-line2 hover:shadow-card transition">
+        <div class="h-10 w-10 rounded-xl bg-fuchsia-500/15 text-fuchsia-300 flex items-center justify-center">
+          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        </div>
+        <h3 class="display mt-4 text-[20px] font-semibold">Students</h3>
+        <p class="mt-2 text-mute text-[15px] leading-relaxed">You want to study, write and ship side-projects 5x faster.</p>
+      </div>
+
+      <div class="group rounded-2xl border border-line bg-ink2 p-6 hover:border-line2 hover:shadow-card transition">
+        <div class="h-10 w-10 rounded-xl bg-orange/10 text-orange flex items-center justify-center">
+          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h3 class="display mt-4 text-[20px] font-semibold">Parents &amp; curious learners</h3>
+        <p class="mt-2 text-mute text-[15px] leading-relaxed">You want AI in your daily life — meal plans, school help, travel, finance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER / BRIDGE -->
+<section class="border-b border-line bg-ink2/40">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-28">
+    <div class="max-w-3xl">
+      <div class="text-[12px] uppercase tracking-[0.2em] text-orange/90 font-semibold">Before vs After</div>
+      <h2 class="display mt-3 text-[34px] sm:text-[44px] md:text-[52px] leading-[1.02] font-bold">
+        Two versions of you. One Sunday in the middle.
+      </h2>
+    </div>
+
+    <div class="mt-10 grid md:grid-cols-2 gap-5">
+      <div class="rounded-2xl border border-line bg-ink p-7">
+        <div class="flex items-center gap-2 text-mute">
+          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 15s1.5-2 4-2 4 2 4 2M9 9h.01M15 9h.01"/></svg>
+          <span class="text-[12px] uppercase tracking-[0.18em]">Before May 16</span>
+        </div>
+        <ul class="mt-5 space-y-3 text-paper/85 text-[15px]">
+          <li class="flex gap-3"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-line2 shrink-0"></span>Generic ChatGPT answers that sound like everyone else's</li>
+          <li class="flex gap-3"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-line2 shrink-0"></span>Copy-pasting between five tabs to finish one task</li>
+          <li class="flex gap-3"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-line2 shrink-0"></span>Quietly scared every time a new tool launches</li>
+          <li class="flex gap-3"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-line2 shrink-0"></span>Drowning in email — 200 unread by Monday morning</li>
+          <li class="flex gap-3"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-line2 shrink-0"></span>Watching competitors ship faster than you can plan</li>
+          <li class="flex gap-3"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-line2 shrink-0"></span>Working late on things AI could finish in 20 minutes</li>
+        </ul>
+      </div>
+
+      <div class="rounded-2xl border border-orange/30 bg-gradient-to-b from-orange/[0.06] to-transparent p-7">
+        <div class="flex items-center gap-2 text-orange">
+          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg>
+          <span class="text-[12px] uppercase tracking-[0.18em] font-semibold">After May 16</span>
+        </div>
+        <ul class="mt-5 space-y-3 text-paper text-[15px]">
+          <li class="flex gap-3"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-orange shrink-0"></span>Claude drafts emails in <em class="not-italic text-paper/80">your</em> voice — you just press send</li>
+          <li class="flex gap-3"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-orange shrink-0"></span>Your calendar runs itself — meetings, follow-ups, prep notes</li>
+          <li class="flex gap-3"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-orange shrink-0"></span>A Cowork project for every business, client and personal goal</li>
+          <li class="flex gap-3"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-orange shrink-0"></span>You triage your inbox in 5 minutes — from a Careem if you want</li>
+          <li class="flex gap-3"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-orange shrink-0"></span>Recurring tasks fire while you sleep — briefings ready by 8 AM</li>
+          <li class="flex gap-3"><span class="mt-1 h-1.5 w-1.5 rounded-full bg-orange shrink-0"></span>You ship your first working app — without writing a line of code</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="mt-10 text-center text-paper/85 text-[18px] sm:text-[22px] display">
+      In one live Sunday, here's exactly how we get you there
+      <span class="text-orange">↓</span>
+    </p>
+  </div>
+</section>
+
+<!-- WHAT YOU'LL LEARN -->
+<section class="border-b border-line">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-28">
+    <div class="max-w-3xl">
+      <div class="text-[12px] uppercase tracking-[0.2em] text-orange/90 font-semibold">What you'll learn</div>
+      <h2 class="display mt-3 text-[34px] sm:text-[44px] md:text-[52px] leading-[1.02] font-bold">
+        Eight skills you'll walk out with — for life.
+      </h2>
+    </div>
+
+    <ol class="mt-10 grid md:grid-cols-2 gap-x-8 gap-y-2">
+      <!-- bullets -->
+      <li class="flex gap-4 border-b border-line py-5">
+        <span class="display text-orange text-[14px] font-bold tabular pt-1">01</span>
+        <p class="text-[16px] sm:text-[17px] text-paper/90"><span class="text-paper font-semibold">Build</span> a Claude system that knows you, your business and your voice.</p>
+      </li>
+      <li class="flex gap-4 border-b border-line py-5">
+        <span class="display text-orange text-[14px] font-bold tabular pt-1">02</span>
+        <p class="text-[16px] sm:text-[17px] text-paper/90"><span class="text-paper font-semibold">Master</span> CO-STAR prompting in 20 minutes flat.</p>
+      </li>
+      <li class="flex gap-4 border-b border-line py-5">
+        <span class="display text-orange text-[14px] font-bold tabular pt-1">03</span>
+        <p class="text-[16px] sm:text-[17px] text-paper/90"><span class="text-paper font-semibold">Connect</span> Gmail, Calendar, Drive, Notion and Canva to Claude in one click.</p>
+      </li>
+      <li class="flex gap-4 border-b border-line py-5">
+        <span class="display text-orange text-[14px] font-bold tabular pt-1">04</span>
+        <p class="text-[16px] sm:text-[17px] text-paper/90"><span class="text-paper font-semibold">Install</span> and customise Claude Skills, Plugins and Projects.</p>
+      </li>
+      <li class="flex gap-4 border-b border-line py-5">
+        <span class="display text-orange text-[14px] font-bold tabular pt-1">05</span>
+        <p class="text-[16px] sm:text-[17px] text-paper/90"><span class="text-paper font-semibold">Schedule</span> recurring tasks — inbox triage, reports, briefings — that run while you sleep.</p>
+      </li>
+      <li class="flex gap-4 border-b border-line py-5">
+        <span class="display text-orange text-[14px] font-bold tabular pt-1">06</span>
+        <p class="text-[16px] sm:text-[17px] text-paper/90"><span class="text-paper font-semibold">Send</span> Claude tasks from your phone via Dispatch — even from the back of a Careem.</p>
+      </li>
+      <li class="flex gap-4 border-b border-line py-5">
+        <span class="display text-orange text-[14px] font-bold tabular pt-1">07</span>
+        <p class="text-[16px] sm:text-[17px] text-paper/90"><span class="text-paper font-semibold">Build</span> your first working app with Claude Code — no coding experience required.</p>
+      </li>
+      <li class="flex gap-4 border-b border-line py-5">
+        <span class="display text-orange text-[14px] font-bold tabular pt-1">08</span>
+        <p class="text-[16px] sm:text-[17px] text-paper/90"><span class="text-paper font-semibold">Walk away</span> with a 100-prompt vault tuned for Dubai professionals.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- AGENDA -->
+<section class="border-b border-line bg-ink2/40">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-20 md:py-28">
+    <div class="max-w-3xl">
+      <div class="text-[12px] uppercase tracking-[0.2em] text-orange/90 font-semibold">The agenda</div>
+      <h2 class="display mt-3 text-[34px] sm:text-[44px] md:text-[52px] leading-[1.02] font-bold">
+        Five hours. Six phases. Every minute earned.
+      </h2>
+      <p class="mt-4 text-mute text-[16px]">Sunday, May 16, 2026 · 10:00 AM – 3:00 PM Dubai time · Live on Zoom</p>
+    </div>
+
+    <ol class="mt-12 relative pl-6 sm:pl-8 border-l border-line2">
+      <!-- Item -->
+      <li class="relative pb-10">
+        <span class="absolute -left-[7px] sm:-left-[9px] top-1.5 h-3.5 w-3.5 rounded-full bg-orange ring-4 ring-ink2"></span>
+        <div class="font-mono text-[12px] uppercase tracking-[0.18em] text-orange">10:00 — 10:15 GST</div>
+        <h3 class="display mt-1 text-[22px] font-semibold">Welcome &amp; your AI starting line</h3>
+        <p class="mt-1 text-mute text-[15px]">We benchmark where you are today and set the bar for where you'll be by 3 PM.</p>
+      </li>
+      <li class="relative pb-10">
+        <span class="absolute -left-[7px] sm:-left-[9px] top-1.5 h-3.5 w-3.5 rounded-full bg-orange ring-4 ring-ink2"></span>
+        <div class="font-mono text-[12px] uppercase tracking-[0.18em] text-orange">10:15 — 11:15 GST · Phase 1</div>
+        <h3 class="display mt-1 text-[22px] font-semibold">Claude on mobile + chat fundamentals + CO-STAR</h3>
+        <p class="mt-1 text-mute text-[15px]">By the end of hour one you can prompt Claude better than 95% of users on Earth.</p>
+      </li>
+      <li class="relative pb-10">
+        <span class="absolute -left-[7px] sm:-left-[9px] top-1.5 h-3.5 w-3.5 rounded-full bg-orange ring-4 ring-ink2"></span>
+        <div class="font-mono text-[12px] uppercase tracking-[0.18em] text-orange">11:15 — 12:45 GST · Phase 2</div>
+        <h3 class="display mt-1 text-[22px] font-semibold">Cowork, Connectors, Projects, Skills, Scheduled Tasks, Dispatch</h3>
+        <p class="mt-1 text-mute text-[15px]">We wire Claude into your real life — Gmail, Calendar, Drive, Notion, Canva — and set tasks to run on autopilot.</p>
+      </li>
+      <li class="relative pb-10">
+        <span class="absolute -left-[7px] sm:-left-[9px] top-1.5 h-3.5 w-3.5 rounded-full bg-gold ring-4 ring-ink2"></span>
+        <div class="font-mono text-[12px] uppercase tracking-[0.18em] text-gold">12:45 — 13:15 GST</div>
+        <h3 class="display mt-1 text-[22px] font-semibold">Break + raffle</h3>
+        <p class="mt-1 text-mute text-[15px]">Stretch, refill the karak, win one of two free 1:1 Claude audits (worth AED 750 each).</p>
+      </li>
+      <li class="relative pb-10">
+        <span class="absolute -left-[7px] sm:-left-[9px] top-1.5 h-3.5 w-3.5 rounded-full bg-orange ring-4 ring-ink2"></span>
+        <div class="font-mono text-[12px] uppercase tracking-[0.18em] text-orange">13:15 — 13:45 GST · Phase 3</div>
+        <h3 class="display mt-1 text-[22px] font-semibold">Claude Code for non-developers</h3>
+        <p class="mt-1 text-mute text-[15px]">Build your first working app live — yes, you, even if "div" sounds like a yoga pose.</p>
+      </li>
+      <li class="relative">
+        <span class="absolute -left-[7px] sm:-left-[9px] top-1.5 h-3.5 w-3.5 rounded-full bg-orange ring-4 ring-ink2"></span>
+        <div class="font-mono text-[12px] uppercase tracking-[0.18em] text-orange">13:45 — 15:00 GST</div>
+        <h3 class="display mt-1 text-[22px] font-semibold">Live Q&amp;A + "Fix My Workflow" clinic</h3>
+        <p class="mt-1 text-mute text-[15px]">Volunteers welcome. Bring a real workflow — we'll rebuild it on screen, together.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- INSTRUCTOR -->
+<section class="border-b border-line">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-28 grid md:grid-cols-12 gap-10 items-center">
+    <div class="md:col-span-5">
+      <div class="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-line2 stripes">
+        <div class="absolute inset-0 bg-gradient-to-br from-indigo/40 via-transparent to-orange/40"></div>
+        <div class="absolute inset-0 flex items-end p-6">
+          <span class="font-mono text-[11px] uppercase tracking-[0.2em] text-paper/70">{{FOUNDER_PORTRAIT}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="md:col-span-7">
+      <div class="text-[12px] uppercase tracking-[0.2em] text-orange/90 font-semibold">Your instructor</div>
+      <h2 class="display mt-3 text-[34px] sm:text-[44px] md:text-[52px] leading-[1.02] font-bold">
+        Hi, I'm <span class="underline decoration-orange decoration-4 underline-offset-4">{{INSTRUCTOR_NAME}}</span>.
+      </h2>
+      <p class="mt-6 text-paper/85 text-[17px] leading-relaxed max-w-2xl">
+        For 8 years I've built and run businesses in Dubai — VAM Realty, Digital Moon Media, an AI agency, a WhatsApp Business API service and a Super Email service. I've helped <span class="text-paper font-semibold">100+ Dubai businesses</span> ship real AI workflows.
+      </p>
+      <p class="mt-4 text-paper/85 text-[17px] leading-relaxed max-w-2xl">
+        I'm not an academic. I'm an operator who lives this every day — between client calls in DIFC and a laptop in a JLT cafe. On Saturday, I'll show you exactly what I've built for myself, and hand it to you.
+      </p>
+
+      <div class="mt-8 grid grid-cols-2 sm:grid-cols-5 gap-3">
+        <div class="rounded-xl border border-line bg-ink2 px-3 py-3 text-center">
+          <div class="display text-[13px] font-semibold">VAM Realty</div>
+          <div class="text-[10px] uppercase tracking-wider text-mute mt-0.5">Real estate</div>
+        </div>
+        <div class="rounded-xl border border-line bg-ink2 px-3 py-3 text-center">
+          <div class="display text-[13px] font-semibold">Digital Moon</div>
+          <div class="text-[10px] uppercase tracking-wider text-mute mt-0.5">Marketing</div>
+        </div>
+        <div class="rounded-xl border border-line bg-ink2 px-3 py-3 text-center">
+          <div class="display text-[13px] font-semibold">{{AI_AGENCY}}</div>
+          <div class="text-[10px] uppercase tracking-wider text-mute mt-0.5">AI agency</div>
+        </div>
+        <div class="rounded-xl border border-line bg-ink2 px-3 py-3 text-center">
+          <div class="display text-[13px] font-semibold">WA Business API</div>
+          <div class="text-[10px] uppercase tracking-wider text-mute mt-0.5">SaaS</div>
+        </div>
+        <div class="rounded-xl border border-line bg-ink2 px-3 py-3 text-center">
+          <div class="display text-[13px] font-semibold">Super Email</div>
+          <div class="text-[10px] uppercase tracking-wider text-mute mt-0.5">SaaS</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<section class="border-b border-line bg-ink2/40">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-28">
+    <div class="max-w-3xl">
+      <div class="text-[12px] uppercase tracking-[0.2em] text-orange/90 font-semibold">What past students say</div>
+      <h2 class="display mt-3 text-[34px] sm:text-[44px] md:text-[52px] leading-[1.02] font-bold">
+        Real Dubai professionals. Real results.
+      </h2>
+    </div>
+
+    <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- testimonial card -->
+      <figure class="rounded-2xl border border-line bg-ink p-6">
+        <div class="flex items-center gap-3">
+          <div class="h-11 w-11 rounded-full bg-gradient-to-br from-orange to-indigo"></div>
+          <div>
+            <div class="font-semibold">{{TESTIMONIAL_1_NAME}}</div>
+            <div class="text-[12px] text-mute">Founder, F&amp;B group · Business Bay</div>
+          </div>
+        </div>
+        <blockquote class="mt-4 text-paper/90 text-[15px] leading-relaxed">
+          "By Sunday night I'd cut my email time in half. By Wednesday my COO was running ops with Claude and I got my evenings back."
+        </blockquote>
+        <div class="mt-3 text-gold text-sm">★★★★★</div>
+      </figure>
+
+      <figure class="rounded-2xl border border-line bg-ink p-6">
+        <div class="flex items-center gap-3">
+          <div class="h-11 w-11 rounded-full bg-gradient-to-br from-emerald-500 to-indigo"></div>
+          <div>
+            <div class="font-semibold">{{TESTIMONIAL_2_NAME}}</div>
+            <div class="text-[12px] text-mute">Marketing lead · DIFC</div>
+          </div>
+        </div>
+        <blockquote class="mt-4 text-paper/90 text-[15px] leading-relaxed">
+          "I came in skeptical. I left with a Claude project that drafts our weekly board update. Best AED 499 I've spent on my career."
+        </blockquote>
+        <div class="mt-3 text-gold text-sm">★★★★★</div>
+      </figure>
+
+      <figure class="rounded-2xl border border-line bg-ink p-6">
+        <div class="flex items-center gap-3">
+          <div class="h-11 w-11 rounded-full bg-gradient-to-br from-fuchsia-500 to-orange"></div>
+          <div>
+            <div class="font-semibold">{{TESTIMONIAL_3_NAME}}</div>
+            <div class="text-[12px] text-mute">CFO · trading company</div>
+          </div>
+        </div>
+        <blockquote class="mt-4 text-paper/90 text-[15px] leading-relaxed">
+          "The connectors section alone was worth it. Our monthly close went from four days to two — same finance team, half the noise."
+        </blockquote>
+        <div class="mt-3 text-gold text-sm">★★★★★</div>
+      </figure>
+
+      <figure class="rounded-2xl border border-line bg-ink p-6">
+        <div class="flex items-center gap-3">
+          <div class="h-11 w-11 rounded-full bg-gradient-to-br from-amber-400 to-rose-500"></div>
+          <div>
+            <div class="font-semibold">{{TESTIMONIAL_4_NAME}}</div>
+            <div class="text-[12px] text-mute">Job seeker · just moved to Dubai</div>
+          </div>
+        </div>
+        <blockquote class="mt-4 text-paper/90 text-[15px] leading-relaxed">
+          "I rebuilt my CV, cover letters and a portfolio site in a weekend. Three interviews the next week. Two offers."
+        </blockquote>
+        <div class="mt-3 text-gold text-sm">★★★★★</div>
+      </figure>
+
+      <figure class="rounded-2xl border border-line bg-ink p-6">
+        <div class="flex items-center gap-3">
+          <div class="h-11 w-11 rounded-full bg-gradient-to-br from-sky-400 to-indigo"></div>
+          <div>
+            <div class="font-semibold">{{TESTIMONIAL_5_NAME}}</div>
+            <div class="text-[12px] text-mute">Engineering student · NYU AD</div>
+          </div>
+        </div>
+        <blockquote class="mt-4 text-paper/90 text-[15px] leading-relaxed">
+          "Claude Code section blew my mind. I shipped my final project two weeks ahead and got the highest mark in class."
+        </blockquote>
+        <div class="mt-3 text-gold text-sm">★★★★★</div>
+      </figure>
+
+      <figure class="rounded-2xl border border-line bg-ink p-6">
+        <div class="flex items-center gap-3">
+          <div class="h-11 w-11 rounded-full bg-gradient-to-br from-orange to-fuchsia-500"></div>
+          <div>
+            <div class="font-semibold">{{TESTIMONIAL_6_NAME}}</div>
+            <div class="text-[12px] text-mute">Mum of two · Mirdif</div>
+          </div>
+        </div>
+        <blockquote class="mt-4 text-paper/90 text-[15px] leading-relaxed">
+          "Meal plans, school worksheets, holiday itineraries — Claude runs the household admin now. I genuinely got my Sundays back."
+        </blockquote>
+        <div class="mt-3 text-gold text-sm">★★★★★</div>
+      </figure>
+    </div>
+
+    <!-- WhatsApp screenshot strip -->
+    <div class="mt-10">
+      <div class="text-[12px] uppercase tracking-[0.2em] text-mute font-semibold mb-4">Praise from the WhatsApp community</div>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="rounded-2xl border border-line bg-[#0e1413] p-4">
+          <div class="flex items-center gap-2 text-[11px] text-emerald-400 font-semibold">
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>{{STUDENT_1}} · today
+          </div>
+          <p class="mt-3 text-[14px] leading-snug text-paper/90 bg-emerald-500/10 rounded-xl rounded-tl-sm p-3">
+            mate this prompt vault is gold. just drafted a 6-page proposal in 9 minutes 😭
+          </p>
+          <p class="mt-2 text-right text-[10px] text-mute">10:42 ✓✓</p>
+        </div>
+        <div class="rounded-2xl border border-line bg-[#0e1413] p-4">
+          <div class="flex items-center gap-2 text-[11px] text-emerald-400 font-semibold">
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>{{STUDENT_2}} · yesterday
+          </div>
+          <p class="mt-3 text-[14px] leading-snug text-paper/90 bg-emerald-500/10 rounded-xl rounded-tl-sm p-3">
+            inbox went from 217 to 0 in one sitting. the triage skill is unreal.
+          </p>
+          <p class="mt-2 text-right text-[10px] text-mute">22:08 ✓✓</p>
+        </div>
+        <div class="rounded-2xl border border-line bg-[#0e1413] p-4">
+          <div class="flex items-center gap-2 text-[11px] text-emerald-400 font-semibold">
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>{{STUDENT_3}} · 2d
+          </div>
+          <p class="mt-3 text-[14px] leading-snug text-paper/90 bg-emerald-500/10 rounded-xl rounded-tl-sm p-3">
+            i used dispatch from a Careem on the way to a client meeting. felt illegal.
+          </p>
+          <p class="mt-2 text-right text-[10px] text-mute">08:51 ✓✓</p>
+        </div>
+        <div class="rounded-2xl border border-line bg-[#0e1413] p-4">
+          <div class="flex items-center gap-2 text-[11px] text-emerald-400 font-semibold">
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>{{STUDENT_4}} · 3d
+          </div>
+          <p class="mt-3 text-[14px] leading-snug text-paper/90 bg-emerald-500/10 rounded-xl rounded-tl-sm p-3">
+            shipped a tiny landlord-rent-tracker app in 40 mins. zero coding background. wild.
+          </p>
+          <p class="mt-2 text-right text-[10px] text-mute">19:33 ✓✓</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE STACK -->
+<section id="reserve" class="border-b border-line">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-20 md:py-28">
+    <div class="max-w-3xl">
+      <div class="text-[12px] uppercase tracking-[0.2em] text-orange/90 font-semibold">The stack</div>
+      <h2 class="display mt-3 text-[34px] sm:text-[44px] md:text-[52px] leading-[1.02] font-bold">
+        Everything you get when you join.
+      </h2>
+    </div>
+
+    <div class="mt-10 rounded-2xl border border-line bg-ink2 overflow-hidden">
+      <div class="divide-y divide-line">
+        <div class="grid grid-cols-12 gap-3 px-5 sm:px-7 py-4 text-[11px] uppercase tracking-[0.18em] text-mute">
+          <div class="col-span-8">Item</div>
+          <div class="col-span-4 text-right">Value</div>
+        </div>
+        <div class="grid grid-cols-12 gap-3 px-5 sm:px-7 py-5 items-center">
+          <div class="col-span-8">
+            <div class="font-semibold">5-hour live Zoom workshop</div>
+            <div class="text-mute text-[13px]">Sunday, May 16 · 10:00 AM – 3:00 PM Dubai time</div>
+          </div>
+          <div class="col-span-4 text-right tabular display font-semibold">AED 1,500</div>
+        </div>
+        <div class="grid grid-cols-12 gap-3 px-5 sm:px-7 py-5 items-center">
+          <div class="col-span-8">
+            <div class="font-semibold">100-prompt CO-STAR vault</div>
+            <div class="text-mute text-[13px]">Tuned for Dubai professionals · lifetime access</div>
+          </div>
+          <div class="col-span-4 text-right tabular display font-semibold">AED 200</div>
+        </div>
+        <div class="grid grid-cols-12 gap-3 px-5 sm:px-7 py-5 items-center">
+          <div class="col-span-8">
+            <div class="font-semibold">Connector + Skills setup checklist</div>
+            <div class="text-mute text-[13px]">Step-by-step PDF + screen-recordings</div>
+          </div>
+          <div class="col-span-4 text-right tabular display font-semibold">AED 150</div>
+        </div>
+        <div class="grid grid-cols-12 gap-3 px-5 sm:px-7 py-5 items-center">
+          <div class="col-span-8">
+            <div class="font-semibold">Recording with 7-day replay</div>
+            <div class="text-mute text-[13px]">Watch back from any device, anytime</div>
+          </div>
+          <div class="col-span-4 text-right tabular display font-semibold">AED 300</div>
+        </div>
+        <div class="grid grid-cols-12 gap-3 px-5 sm:px-7 py-5 items-center">
+          <div class="col-span-8">
+            <div class="font-semibold">Private WhatsApp community</div>
+            <div class="text-mute text-[13px]">Ongoing prompts, drops &amp; live monthly office hours</div>
+          </div>
+          <div class="col-span-4 text-right tabular display font-semibold">AED 250</div>
+        </div>
+        <div class="grid grid-cols-12 gap-3 px-5 sm:px-7 py-5 items-center">
+          <div class="col-span-8">
+            <div class="font-semibold">Certificate of completion</div>
+            <div class="text-mute text-[13px]">Add it to LinkedIn, your CV, your fridge</div>
+          </div>
+          <div class="col-span-4 text-right tabular display font-semibold text-gold">Priceless</div>
+        </div>
+      </div>
+      <div class="bg-gradient-to-r from-indigo/20 via-transparent to-orange/20 px-5 sm:px-7 py-6 border-t border-line">
+        <div class="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <div class="text-mute text-[13px]">Total value</div>
+            <div class="display text-[22px] font-bold text-mute"><s>AED 2,400</s></div>
+          </div>
+          <div class="text-right">
+            <div class="text-[13px] uppercase tracking-[0.18em] text-orange font-semibold">Today</div>
+            <div class="display text-[40px] sm:text-[56px] font-bold leading-none">AED 499</div>
+            <div class="text-mute text-[12px] mt-1">One-time payment · No subscription · Replay included</div>
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <a href="https://buy.stripe.com/REPLACE_ME" class="cta inline-flex items-center gap-2 rounded-full px-7 py-4 text-[14px] font-bold uppercase tracking-wider text-white transition">
+            Reserve my seat — AED 499
+            <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="{{CALENDLY_LINK}}" class="inline-flex items-center gap-2 rounded-full border border-line2 px-5 py-3.5 text-sm text-paper/85 hover:bg-white/5">
+            Book a 5-min call before you commit
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- URGENCY BAND -->
+<section class="border-b border-line bg-black">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10 grid md:grid-cols-3 gap-6 items-center">
+    <div>
+      <div class="text-[11px] uppercase tracking-[0.2em] text-orange font-semibold flex items-center gap-2">
+        <span class="h-2 w-2 rounded-full bg-orange pulse-dot"></span>Live countdown
+      </div>
+      <div class="display mt-1 text-[32px] sm:text-[40px] font-bold tabular" data-countdown></div>
+    </div>
+    <div class="md:text-center">
+      <div class="text-[11px] uppercase tracking-[0.2em] text-mute font-semibold">Seats remaining</div>
+      <div class="display mt-1 text-[40px] sm:text-[56px] font-bold leading-none">
+        <span class="text-orange">27</span><span class="text-mute"> / 50</span>
+      </div>
+      <div class="mt-3 h-1.5 w-full bg-line rounded-full overflow-hidden md:max-w-xs md:mx-auto">
+        <div class="h-full bg-gradient-to-r from-indigo to-orange" style="width:46%"></div>
+      </div>
+    </div>
+    <div class="md:text-right">
+      <a href="#reserve" class="cta inline-flex items-center gap-2 rounded-full px-7 py-4 text-[14px] font-bold uppercase tracking-wider text-white transition">
+        Grab a seat — AED 499
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="border-b border-line">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-20 md:py-28 text-center">
+    <div class="inline-flex h-14 w-14 items-center justify-center rounded-full bg-good/15 text-good mb-6">
+      <svg viewBox="0 0 24 24" class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
+    </div>
+    <div class="text-[12px] uppercase tracking-[0.2em] text-good font-semibold">Hour-1 guarantee</div>
+    <h2 class="display mt-3 text-[28px] sm:text-[36px] md:text-[44px] leading-[1.1] font-bold">
+      Show up live. If by the end of hour 1 you don't feel this is the most useful AI workshop you've ever attended, WhatsApp me — I'll refund every dirham.
+    </h2>
+    <p class="mt-5 text-mute text-[16px] max-w-2xl mx-auto">
+      And you keep the recording <em class="not-italic text-paper/85">and</em> the prompt vault. The risk is mine. Your only job is to show up.
+    </p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="border-b border-line bg-ink2/40">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-20 md:py-28">
+    <div>
+      <div class="text-[12px] uppercase tracking-[0.2em] text-orange/90 font-semibold">FAQ</div>
+      <h2 class="display mt-3 text-[34px] sm:text-[44px] md:text-[52px] leading-[1.02] font-bold">
+        Asked &amp; answered.
+      </h2>
+    </div>
+
+    <div class="mt-10 divide-y divide-line border-y border-line">
+      <details class="group py-5">
+        <summary class="flex items-center justify-between gap-6">
+          <span class="display text-[18px] font-semibold">I've never used AI before. Will I be lost?</span>
+          <span class="chev text-orange text-2xl leading-none">+</span>
+        </summary>
+        <p class="mt-3 text-paper/80 text-[15px] leading-relaxed">No. We start at zero — Claude on your phone, your first chat, your first prompt. By 11 AM you'll feel like a different person.</p>
+      </details>
+      <details class="group py-5">
+        <summary class="flex items-center justify-between gap-6">
+          <span class="display text-[18px] font-semibold">I'm an advanced user. Will I be bored?</span>
+          <span class="chev text-orange text-2xl leading-none">+</span>
+        </summary>
+        <p class="mt-3 text-paper/80 text-[15px] leading-relaxed">Phase 2 (Cowork, Connectors, Skills, Scheduled Tasks, Dispatch) and Phase 3 (Claude Code) are deep — even power users walk away with new patterns.</p>
+      </details>
+      <details class="group py-5">
+        <summary class="flex items-center justify-between gap-6">
+          <span class="display text-[18px] font-semibold">What do I need before Saturday?</span>
+          <span class="chev text-orange text-2xl leading-none">+</span>
+        </summary>
+        <p class="mt-3 text-paper/80 text-[15px] leading-relaxed">A laptop, a phone, a Zoom account, and a Claude account (free tier is fine — Pro is recommended). We'll send a 5-minute setup checklist 24 hours before.</p>
+      </details>
+      <details class="group py-5">
+        <summary class="flex items-center justify-between gap-6">
+          <span class="display text-[18px] font-semibold">What if I can't make it live?</span>
+          <span class="chev text-orange text-2xl leading-none">+</span>
+        </summary>
+        <p class="mt-3 text-paper/80 text-[15px] leading-relaxed">You'll get the recording for 7 days and lifetime access to the prompt vault and WhatsApp community. The hour-1 refund only applies if you attend live.</p>
+      </details>
+      <details class="group py-5">
+        <summary class="flex items-center justify-between gap-6">
+          <span class="display text-[18px] font-semibold">Is this in English or Arabic?</span>
+          <span class="chev text-orange text-2xl leading-none">+</span>
+        </summary>
+        <p class="mt-3 text-paper/80 text-[15px] leading-relaxed">English. Built for Dubai's mixed expat community — Indian, Arab, Filipino, European professionals all welcome.</p>
+      </details>
+      <details class="group py-5">
+        <summary class="flex items-center justify-between gap-6">
+          <span class="display text-[18px] font-semibold">How is this different from a YouTube tutorial?</span>
+          <span class="chev text-orange text-2xl leading-none">+</span>
+        </summary>
+        <p class="mt-3 text-paper/80 text-[15px] leading-relaxed">YouTube shows you what's possible. This installs it into your week. You'll leave with Claude wired into your real Gmail, your real calendar, your real business — not a demo account.</p>
+      </details>
+      <details class="group py-5">
+        <summary class="flex items-center justify-between gap-6">
+          <span class="display text-[18px] font-semibold">Is AED 299 the final price? Any extra costs?</span>
+          <span class="chev text-orange text-2xl leading-none">+</span>
+        </summary>
+        <p class="mt-3 text-paper/80 text-[15px] leading-relaxed">AED 499 is the full ticket. No upsells. The only optional cost is a Claude Pro subscription (≈ AED 75/month) — strongly recommended but not required.</p>
+      </details>
+      <details class="group py-5">
+        <summary class="flex items-center justify-between gap-6">
+          <span class="display text-[18px] font-semibold">Can my company pay / do you do invoices?</span>
+          <span class="chev text-orange text-2xl leading-none">+</span>
+        </summary>
+        <p class="mt-3 text-paper/80 text-[15px] leading-relaxed">Yes — we issue UAE-compliant invoices with TRN. Just reply to the order email. We also offer team rates for 5+ seats.</p>
+      </details>
+      <details class="group py-5">
+        <summary class="flex items-center justify-between gap-6">
+          <span class="display text-[18px] font-semibold">Will you teach ChatGPT, Gemini, or others?</span>
+          <span class="chev text-orange text-2xl leading-none">+</span>
+        </summary>
+        <p class="mt-3 text-paper/80 text-[15px] leading-relaxed">No. We go deep on Claude — because that's what we use to run real businesses, every day. Almost everything you learn transfers to other tools, but the workflow we install is Claude-first.</p>
+      </details>
+      <details class="group py-5">
+        <summary class="flex items-center justify-between gap-6">
+          <span class="display text-[18px] font-semibold">How does the refund actually work?</span>
+          <span class="chev text-orange text-2xl leading-none">+</span>
+        </summary>
+        <p class="mt-3 text-paper/80 text-[15px] leading-relaxed">Show up live. At the end of hour 1, if you don't love it, WhatsApp me. I'll refund the full AED 499 within 48 hours and you keep the recording and the vault. No forms, no friction.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="hero-grad">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-24 md:py-32 text-center">
+    <div class="inline-flex items-center gap-2 rounded-full border border-line2 bg-white/5 px-3 py-1.5 text-[12px] sm:text-sm">
+      <span>🇦🇪 Sunday, May 16, 2026 · 10:00 AM Dubai time · Only 50 seats</span>
+    </div>
+    <h2 class="h1 mt-6 text-[56px] sm:text-[80px] md:text-[104px] leading-[0.92]">
+      Get AI Ready<span class="text-orange">.</span>
+    </h2>
+    <p class="mt-6 text-paper/80 text-[18px] sm:text-[22px] max-w-2xl mx-auto">
+      One Sunday. Five hours. The version of you that walks out won't recognise the version that walked in.
+    </p>
+
+    <div class="mt-10 flex justify-center" data-countdown-grid-final>
+      <!-- filled by JS -->
+    </div>
+
+    <div class="mt-10 flex flex-wrap justify-center items-center gap-3">
+      <a href="https://buy.stripe.com/REPLACE_ME" class="cta inline-flex items-center gap-2 rounded-full px-7 py-4 text-[14px] sm:text-[15px] font-bold uppercase tracking-wider text-white transition">
+        Reserve my seat — AED 499
+        <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <a href="{{CALENDLY_LINK}}" class="inline-flex items-center gap-2 rounded-full border border-line2 px-5 py-3.5 text-sm text-paper/85 hover:bg-white/5">
+        Book a 5-min call first
+      </a>
+    </div>
+
+    <p class="mt-5 text-[13px] text-mute">
+      <span class="text-orange font-semibold">27 of 50 seats left</span>
+      · 100% refund if you don't love hour 1
+      · Replay + prompt vault + WhatsApp community included
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-line">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10 grid md:grid-cols-3 gap-6 items-center">
+    <div class="flex items-center gap-2">
+      <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo to-orange text-white display font-bold">G</span>
+      <div>
+        <div class="display font-bold text-[16px]">Get AI Ready</div>
+        <div class="text-[11px] text-mute">A {{COMPANY_NAME}} workshop · Dubai, UAE</div>
+      </div>
+    </div>
+    <div class="flex flex-wrap md:justify-center gap-x-5 gap-y-2 text-[13px] text-mute">
+      <a href="mailto:{{CONTACT_EMAIL}}" class="hover:text-paper">{{CONTACT_EMAIL}}</a>
+      <a href="https://wa.me/{{WHATSAPP_NUMBER}}" class="hover:text-paper">WhatsApp</a>
+      <a href="#" class="hover:text-paper">Privacy</a>
+      <a href="#" class="hover:text-paper">Refund policy</a>
+    </div>
+    <div class="text-[12px] text-mute md:text-right">© 2026 {{COMPANY_NAME}}. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- MOBILE STICKY CTA -->
+<div class="md:hidden fixed bottom-0 inset-x-0 z-40 border-t border-line bg-ink/95 backdrop-blur px-3 py-2.5 flex items-center gap-3" style="padding-bottom: calc(0.625rem + env(safe-area-inset-bottom));">
+  <div class="flex-1 min-w-0">
+    <div class="text-[10px] uppercase tracking-wider text-mute">Doors close in</div>
+    <div class="display text-[14px] font-bold tabular truncate" data-countdown></div>
+  </div>
+  <a href="#reserve" class="cta inline-flex items-center gap-1 rounded-full px-4 py-3 text-[12px] font-bold uppercase tracking-wider text-white">Reserve · 499</a>
+</div>
+
+<script>
+  // ========== Countdown ==========
+  // Workshop start: Saturday, May 16, 2026 10:00 GST (UTC+4) → 06:00 UTC
+  const TARGET = new Date('2026-05-16T06:00:00Z').getTime();
+
+  function pad(n) { return String(n).padStart(2, '0'); }
+
+  function buildBox(label, value) {
+    return `<div class="rounded-xl border border-line bg-ink2/80 px-3 py-3 text-center">
+      <div class="display text-[28px] sm:text-[34px] font-bold tabular leading-none">${value}</div>
+      <div class="text-[10px] uppercase tracking-[0.18em] text-mute mt-1.5">${label}</div>
+    </div>`;
+  }
+  function buildBoxLg(label, value) {
+    return `<div class="rounded-2xl border border-line2 bg-black/40 px-5 py-5 text-center min-w-[88px]">
+      <div class="display text-[40px] sm:text-[56px] font-bold tabular leading-none">${value}</div>
+      <div class="text-[10px] uppercase tracking-[0.18em] text-mute mt-2">${label}</div>
+    </div>`;
+  }
+
+  function tick() {
+    const now = Date.now();
+    let diff = Math.max(0, TARGET - now);
+    const days = Math.floor(diff / 86400000); diff -= days * 86400000;
+    const hours = Math.floor(diff / 3600000); diff -= hours * 3600000;
+    const mins = Math.floor(diff / 60000);   diff -= mins * 60000;
+    const secs = Math.floor(diff / 1000);
+
+    // inline strings (nav + urgency band + mobile)
+    document.querySelectorAll('[data-countdown]').forEach(el => {
+      el.textContent = `${days}d ${pad(hours)}h ${pad(mins)}m ${pad(secs)}s`;
+    });
+
+    // grid (hero strip)
+    const grid = document.querySelector('[data-countdown-grid]');
+    if (grid) {
+      grid.innerHTML = [
+        buildBox('Days', days),
+        buildBox('Hours', pad(hours)),
+        buildBox('Minutes', pad(mins)),
+        buildBox('Seconds', pad(secs)),
+      ].join('');
+    }
+
+    const gridFinal = document.querySelector('[data-countdown-grid-final]');
+    if (gridFinal) {
+      gridFinal.innerHTML = `<div class="grid grid-cols-4 gap-2 sm:gap-3">${[
+        buildBoxLg('Days', days),
+        buildBoxLg('Hours', pad(hours)),
+        buildBoxLg('Minutes', pad(mins)),
+        buildBoxLg('Seconds', pad(secs)),
+      ].join('')}</div>`;
+    }
+  }
+  tick();
+  setInterval(tick, 1000);
+
+  // Smooth-scroll anchors don't bork sticky bottom nav
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href');
+      if (id.length > 1) {
+        const t = document.querySelector(id);
+        if (t) { e.preventDefault(); t.scrollIntoView({behavior: 'smooth', block: 'start'}); history.replaceState(null, '', id); }
+      }
+    });
+  });
+</script>
+</body>
+</html>
