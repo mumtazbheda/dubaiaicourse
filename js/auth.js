@@ -16,16 +16,10 @@ const modalHTML = `
       <button data-tab="signin" type="button" class="rounded-full py-2 transition">Sign in</button>
     </div>
 
-    <div class="mt-5 grid grid-cols-1 gap-2">
-      <button id="auth-google" type="button" class="w-full inline-flex items-center justify-center gap-2 rounded-full bg-white text-ink py-3 font-semibold text-[14px] hover:bg-paper transition">
-        <svg viewBox="0 0 24 24" class="h-4 w-4"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.07 5.07 0 0 1-2.2 3.32v2.77h3.56c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.65l-3.56-2.77c-.99.67-2.26 1.06-3.72 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.11A6.6 6.6 0 0 1 5.5 12c0-.73.13-1.45.34-2.11V7.05H2.18A11 11 0 0 0 1 12c0 1.77.42 3.45 1.18 4.95l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.05l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg>
-        Continue with Google
-      </button>
-      <button id="auth-apple" type="button" class="w-full inline-flex items-center justify-center gap-2 rounded-full bg-black text-white py-3 font-semibold text-[14px] border border-white/10 hover:bg-neutral-900 transition">
-        <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
-        Continue with Apple
-      </button>
-    </div>
+    <button id="auth-google" type="button" class="mt-5 w-full inline-flex items-center justify-center gap-2 rounded-full bg-white text-ink py-3 font-semibold text-[14px] hover:bg-paper transition">
+      <svg viewBox="0 0 24 24" class="h-4 w-4"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.07 5.07 0 0 1-2.2 3.32v2.77h3.56c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.65l-3.56-2.77c-.99.67-2.26 1.06-3.72 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.11A6.6 6.6 0 0 1 5.5 12c0-.73.13-1.45.34-2.11V7.05H2.18A11 11 0 0 0 1 12c0 1.77.42 3.45 1.18 4.95l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.05l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg>
+      Continue with Google
+    </button>
 
     <div class="my-4 flex items-center gap-3 text-[10px] uppercase tracking-[0.18em] text-mute">
       <span class="h-px flex-1 bg-line"></span>or<span class="h-px flex-1 bg-line"></span>
@@ -121,21 +115,19 @@ export async function initAuth() {
     $('auth-submit').textContent = m ? 'Send me a link' : (mode === 'signup' ? 'Sign up' : 'Sign in');
   });
 
-  const oauthHandler = (provider) => async () => {
+  $('auth-google').addEventListener('click', async () => {
     hideMessages();
     try {
       const sb = await getSupabase();
       const { error } = await sb.auth.signInWithOAuth({
-        provider,
+        provider: 'google',
         options: { redirectTo: window.location.origin + '/?postauth=1' },
       });
       if (error) throw error;
     } catch (err) {
-      showError(err.message || `${provider} sign-in failed`);
+      showError(err.message || 'Google sign-in failed');
     }
-  };
-  $('auth-google').addEventListener('click', oauthHandler('google'));
-  $('auth-apple').addEventListener('click', oauthHandler('apple'));
+  });
 
   $('auth-form').addEventListener('submit', async (e) => {
     e.preventDefault();
