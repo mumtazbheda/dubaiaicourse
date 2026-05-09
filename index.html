@@ -125,6 +125,7 @@
       <span class="inline-flex items-center gap-1.5"><span class="h-2 w-2 rounded-full bg-good pulse-dot"></span>Workshop in</span>
       <span data-countdown class="tabular text-paper font-semibold"></span>
     </div>
+    <div id="nav-auth" class="hidden md:flex items-center"></div>
     <a href="#reserve" class="cta hidden sm:inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-[13px] font-bold uppercase tracking-wider text-white transition">
       Reserve my seat — AED 499
     </a>
@@ -982,6 +983,13 @@
       }
     });
   });
+</script>
+
+<script type="module">
+  import { initAuth } from '/js/auth.js';
+  import { wireCheckoutButtons } from '/js/checkout.js';
+  await initAuth();
+  await wireCheckoutButtons();
 </script>
 </body>
 </html>
