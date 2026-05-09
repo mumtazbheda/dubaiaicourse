@@ -179,10 +179,16 @@ export async function initAuth() {
     }
   });
 
-  const sb = await getSupabase();
-  sb.auth.onAuthStateChange((_event, session) => updateNavForUser(session?.user || null));
-  const { data } = await sb.auth.getUser();
-  updateNavForUser(data.user);
+  const sb = await getSupabase().catch((err) => {
+    console.error('[auth] Supabase init failed — Sign in button will still render but auth actions will fail:', err);
+    return null;
+  });
+  updateNavForUser(null);
+  if (sb) {
+    sb.auth.onAuthStateChange((_event, session) => updateNavForUser(session?.user || null));
+    const { data } = await sb.auth.getUser();
+    updateNavForUser(data.user);
+  }
 }
 
 function updateNavForUser(user) {

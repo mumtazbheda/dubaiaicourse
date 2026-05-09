@@ -988,8 +988,8 @@
 <script type="module">
   import { initAuth } from '/js/auth.js';
   import { wireCheckoutButtons } from '/js/checkout.js';
-  await initAuth();
-  await wireCheckoutButtons();
+  try { await initAuth(); } catch (err) { console.error('[boot] initAuth failed:', err); }
+  try { await wireCheckoutButtons(); } catch (err) { console.error('[boot] wireCheckoutButtons failed:', err); }
 </script>
 </body>
 </html>
