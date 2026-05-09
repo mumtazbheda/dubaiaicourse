@@ -57,7 +57,10 @@
 
   /* Marquee */
   @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-  .ticker-track { animation: ticker 40s linear infinite; }
+  .ticker-track { animation: ticker 30s linear infinite; }
+  @media (max-width: 768px) {
+    .ticker-track { animation-duration: 18s; }
+  }
 
   /* Pulse dot */
   @keyframes pulseDot { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: .4; transform: scale(.8); } }
@@ -852,7 +855,6 @@
     <div class="flex flex-wrap md:justify-center gap-x-5 gap-y-2 text-[13px] text-mute">
       <a href="#support" class="hover:text-paper" data-support-trigger>Support</a>
       <a href="#signin" class="hover:text-paper" data-signin-trigger>Already paid? Sign in</a>
-      <a href="https://wa.me/{{WHATSAPP_NUMBER}}" class="hover:text-paper">WhatsApp</a>
       <a href="/privacy.html" class="hover:text-paper">Privacy</a>
       <a href="/refund.html" class="hover:text-paper">Refund policy</a>
     </div>
