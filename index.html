@@ -159,7 +159,7 @@
       </div>
 
       <p class="mt-4 text-[13px] text-mute">
-        <span class="text-paper/85">100% refund</span> if you don't love the first hour
+        <span class="text-paper/85">100% refund</span>
         · <span class="text-paper/85">50 seats</span> only
         · <span class="text-paper/85">Replay included</span>
       </p>
@@ -440,7 +440,7 @@
         Hi, I'm <span class="underline decoration-orange decoration-4 underline-offset-4">Mumtaz Ahmed</span>.
       </h2>
       <p class="mt-6 text-paper/85 text-[17px] leading-relaxed max-w-2xl">
-        For 8 years I've built and run businesses in Dubai — VAM Realty, Solution Minds (AI &amp; marketing agency), AiChats (WhatsApp Business API service) and an email marketing platform. I've helped <span class="text-paper font-semibold">100+ Dubai businesses</span> ship real AI workflows.
+        For 8 years I've built and run businesses in Dubai — Kingdom Capital Real Estate, Solution Minds (AI &amp; marketing agency), AiChats (WhatsApp Business API service) and an email marketing platform. I've helped <span class="text-paper font-semibold">100+ Dubai businesses</span> ship real AI workflows.
       </p>
       <p class="mt-4 text-paper/85 text-[17px] leading-relaxed max-w-2xl">
         I'm not an academic. I'm an operator who lives this every day — between client calls in DIFC and a laptop in a JLT cafe. On Sunday, I'll show you exactly what I've built for myself, and hand it to you.
@@ -448,8 +448,8 @@
 
       <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3">
         <div class="rounded-xl border border-line bg-ink2 px-3 py-3 text-center">
-          <div class="display text-[13px] font-semibold">VAM Realty</div>
-          <div class="text-[10px] uppercase tracking-wider text-mute mt-0.5">Real estate</div>
+          <div class="display text-[13px] font-semibold">Kingdom Capital</div>
+          <div class="text-[10px] uppercase tracking-wider text-mute mt-0.5">Real Estate</div>
         </div>
         <div class="rounded-xl border border-line bg-ink2 px-3 py-3 text-center">
           <div class="display text-[13px] font-semibold">Solution Minds</div>
@@ -834,7 +834,7 @@
 
     <p class="mt-5 text-[13px] text-mute">
       <span class="text-orange font-semibold" data-seats-text>27 of 50 seats left</span>
-      · 100% refund if you don't love hour 1
+      · 100% refund
       · Replay + prompt vault + WhatsApp community included
     </p>
   </div>
@@ -853,8 +853,8 @@
       <a href="#support" class="hover:text-paper" data-support-trigger>Support</a>
       <a href="#signin" class="hover:text-paper" data-signin-trigger>Already paid? Sign in</a>
       <a href="https://wa.me/{{WHATSAPP_NUMBER}}" class="hover:text-paper">WhatsApp</a>
-      <a href="#" class="hover:text-paper">Privacy</a>
-      <a href="#" class="hover:text-paper">Refund policy</a>
+      <a href="/privacy.html" class="hover:text-paper">Privacy</a>
+      <a href="/refund.html" class="hover:text-paper">Refund policy</a>
     </div>
     <div class="text-[12px] text-mute md:text-right">© 2026 Solution Minds. All rights reserved.</div>
   </div>
@@ -927,8 +927,20 @@
     }
 
   }
+  // Schedule ticks aligned to second boundaries so the visible numbers
+  // change exactly on the 1-second mark (setInterval drifts and can also
+  // be throttled when the tab is backgrounded).
+  function scheduleTick() {
+    const ms = 1000 - (Date.now() % 1000);
+    setTimeout(() => { tick(); scheduleTick(); }, ms);
+  }
   tick();
-  setInterval(tick, 1000);
+  scheduleTick();
+  // When the tab regains focus, immediately re-render so the user never
+  // sees a stale value from a throttled background timer.
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) tick();
+  });
 
   // Smooth-scroll anchors don't bork sticky bottom nav
   document.querySelectorAll('a[href^="#"]').forEach(a => {
