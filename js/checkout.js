@@ -24,20 +24,41 @@ export async function wireCheckoutButtons() {
     }
   });
 
-  if (new URLSearchParams(window.location.search).has('paid')) {
-    showPaidToast();
-    setTimeout(() => openAuthModal(null, {
-      title: 'You’re in. Now claim your seat.',
-      subtitle: 'Sign in with the email you just paid with to unlock the prompt vault and WhatsApp community.',
-    }), 600);
+  // Footer "Already paid? Sign in" trigger
+  document.querySelectorAll('[data-signin-trigger]').forEach((el) => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      openAuthModal(null, {
+        title: 'Already paid? Sign in',
+        subtitle: 'Enter the email you used at checkout — we\'ll send you a magic link.',
+      });
+    });
+  });
+
+  const params = new URLSearchParams(window.location.search);
+  if (params.has('paid')) {
+    showToast(
+      'Payment received ✅',
+      "We've sent an access link to the email you just paid with. Check your inbox (and spam) — clicking it unlocks your seat."
+    );
+    history.replaceState(null, '', window.location.pathname);
+  } else if (params.has('welcome')) {
+    showToast(
+      "You're in 🎉",
+      "Bookmark this page. We'll send Sunday's Zoom link to your email 24 hours before the workshop."
+    );
     history.replaceState(null, '', window.location.pathname);
   }
 }
 
-function showPaidToast() {
+function showToast(title, body) {
   const toast = document.createElement('div');
-  toast.className = 'fixed top-4 left-1/2 -translate-x-1/2 z-[70] rounded-full bg-good text-ink font-semibold px-5 py-3 shadow-card text-[14px]';
-  toast.textContent = 'Payment received. See you Sunday May 16.';
+  toast.className = 'fixed top-4 left-1/2 -translate-x-1/2 z-[70] rounded-2xl bg-good text-ink px-5 py-4 shadow-card text-[14px] max-w-sm w-[calc(100%-2rem)] text-center';
+  toast.innerHTML = `<div class="font-bold">${title}</div><div class="mt-1 font-normal text-[13px] leading-snug">${body}</div>`;
   document.body.appendChild(toast);
-  setTimeout(() => toast.remove(), 8000);
+  setTimeout(() => {
+    toast.style.transition = 'opacity 0.5s';
+    toast.style.opacity = '0';
+    setTimeout(() => toast.remove(), 500);
+  }, 12000);
 }

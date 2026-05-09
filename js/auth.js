@@ -203,8 +203,6 @@ function updateNavForUser(user) {
       await sb.auth.signOut();
     });
   } else {
-    slot.innerHTML = `
-      <button id="nav-signin" class="rounded-full border border-line2 px-3 py-1.5 text-[12px] hover:bg-white/5">Sign in</button>`;
-    document.getElementById('nav-signin').addEventListener('click', () => openAuthModal());
+    slot.innerHTML = '';
   }
 }
